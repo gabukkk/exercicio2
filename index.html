@@ -6,10 +6,7 @@
     <title>Exercício soma e subtração</title>
     <script>
         function calcular() {
-            // Obtém o valor do input
             var valor = parseInt(document.getElementById('valor').value);
-
-            // Verifica se o valor é par ou ímpar e realiza a operação correspondente
             var resultado;
             var operacao;
 
@@ -21,7 +18,6 @@
                 operacao = "soma";
             }
 
-            // Exibe o resultado
             document.getElementById('resultado').innerText = " A resposta é " + resultado + ".";
         }
     </script>
