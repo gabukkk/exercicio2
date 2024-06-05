@@ -1,45 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"content="width=device-width, incial-scale=1.0">
-    <style>
-        #area {
-            background-color: green;
-            color: whithe;
-            font: Arial;
-            height: 100px;
-            width: 200px;
-            text-aling: center;
-            line-height: 100px;
-            border: trick groove yellow;
-            
-        }
-    </style>
-    </head>
-<body>
-    <h1>Olá, mundo!</h1>
-    <p>resultado aqui</p>
-    <p> aprendendo a usar o <strong>DOM</strong> em JS</p>
-    <div id="area" onclick="clicar()" onmouseenter="entrar()" mousemove="mover()" onmouseout="sair()">Clique Aqui</div>
- <script>
-     var a = document.getElementById('area')
-     function clicar(){
-         a.innerText = 'clicou!';
-         a.style.backgroundColor = '#8B0000';
-        }
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operação de Soma ou Subtração</title>
+    <script>
+        function calcular() {
+            // Obtém o valor do input
+            var valor = parseInt(document.getElementById('valor').value);
 
-     var b = document.getElementById('area')
-     function entrar(){
-            a.innerText = 'Entrou!';
-            a.style.backgroundColor = '#3CB371';
+            // Verifica se o valor é par ou ímpar e realiza a operação correspondente
+            var resultado;
+            var operacao;
+
+            if (valor % 2 === 0) {
+                resultado = valor - 1;
+                operacao = "subtração";
+            } else {
+                resultado = valor + 1;
+                operacao = "soma";
+            }
+
+            // Exibe o resultado
+            document.getElementById('resultado').innerText = "Você digitou " + valor + ". Foi realizada uma " + operacao + ". O resultado é " + resultado + ".";
         }
-     var c = document.ElementById('area')
-     function sair(){
-            a.innerText = 'Saiu!';
-            a.style.backgroundColor = '#00CED1';
-        }
-     
- </script>        
+    </script>
+</head>
+<body>
+    <h1>Operação de Soma ou Subtração</h1>
+    <form onsubmit="event.preventDefault(); calcular();">
+        <label for="valor">Digite um valor:</label>
+        <input type="number" id="valor" required>
+        <button type="submit">Calcular</button>
+    </form>
+    <p id="resultado"></p>
 </body>
 </html>
