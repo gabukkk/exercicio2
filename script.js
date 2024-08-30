@@ -12,10 +12,10 @@ function verificarDia() {
             break;
         case 'sábado':
         case 'domingo':
-            resposta = 'É um fim de semana.';
+            resposta = 'É fim de semana.';
             break;
         default:
-            resposta = 'Dia inválido. Por favor, insira um dia da semana válido.';
+            resposta = 'Dia inválido.';
             break;
     }
 
