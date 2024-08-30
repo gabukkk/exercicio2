@@ -3,11 +3,11 @@ function verificarDia() {
     var resposta;
 
     switch (dia) {
-        case 'segunda-feira':
-        case 'terça-feira':
-        case 'quarta-feira':
-        case 'quinta-feira':
-        case 'sexta-feira':
+        case 'segunda':
+        case 'terça':
+        case 'quarta':
+        case 'quinta':
+        case 'sexta':
             resposta = 'É um dia útil.';
             break;
         case 'sábado':
