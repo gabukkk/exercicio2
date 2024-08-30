@@ -3,37 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nome e Nacionalidade</title>
+    <title>Verificador de Dia da Semana</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
-<body>
-    <h1>Exercício Nome e Nacionalidade</h1>
-    
-    <p>Qual o seu nome:</p>
-    <input type="text" id="nome">
-    <br>
-    
-    <p>Qual o seu país:</p>
-    <input type="text" id="pais">
-    <br>
-    
-    <button onclick="calcular()">Enviar</button>
-    
-    <p id="resultado"></p>
-
-    <script>
-        function calcular() {
-            var nome = document.getElementById('nome').value.trim();
-            var pais = document.getElementById('pais').value.trim().toLowerCase();
-            var resultadoDiv = document.getElementById('resultado');
-            
-            if (nome && pais) {
-                if (pais === 'brasil' || pais === 'brazil') {
-                    resultadoDiv.textContent = "Seu nome é: " + nome + " e você é brasileiro(a).";
-                } else {
-                    resultadoDiv.textContent = "Seu nome é: " + nome + " e você é estrangeiro(a).";
-                }
-            } 
-        }
-    </script>
+<body onload="carregar()">
+    <header>
+        <h1>Verificador de Dia da Semana</h1>
+    </header>
+    <section>
+        <div id="diaSemana">
+            <label for="dia">Digite o dia da semana:</label>
+            <input type="text" id="dia">
+            <button onclick="verificarDia()">Verificar</button>
+        </div>
+        <div id="respostaDia" style="margin-top: 20px; font-size: 20px;"></div>
+    </section>
+    <footer>
+        <p>&copy; Verificador de Dia da Semana</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
