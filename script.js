@@ -1,6 +1,3 @@
-Java script:
-
-
 //regressiva
 function contarRegressiva() {
   let numero = parseInt(document.getElementById("numeroRegressiva").value);
