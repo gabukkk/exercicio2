@@ -1,4 +1,3 @@
-/* Estilo para o contêiner principal */
 .container {
   width: 90%;
   margin: auto;
@@ -6,22 +5,19 @@
   font-family: Arial, sans-serif;
 }
 
-/* Estilo para os números */
 .numeros {
   font-size: 18px;
   color: #333;
 }
 
-/* Estilo para o resultado */
 .resultado {
   font-weight: bold;
   font-size: 20px;
   color: #ff5722;
 }
 
-/* Estilo para os botões */
 .botao {
-  background-color: #4CAF50; /* Verde */
+  background-color: #4CAF50; 
   border: none;
   color: white;
   padding: 10px 20px;
