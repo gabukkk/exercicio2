@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade JavaScript</title>
-    <link rel="stylesheet" href="estilo.css">
-</head>
-<body onload="carregar()">
-    <header>
-        <h1>Trabalho</h1>
-    </header>
-    <section>
-        <div id="diaSemana">
-            <label for="dia"> Fale um dia da semana:</label>
-            <input type="text" id="dia">
-            <button onclick="verificarDia()">Verificar</button>
-        </div>
-        <div id="respostaDia" style="margin-top: 20px; font-size: 20px;"></div>
-    </section>
-    <footer>
-        <p>I love you Everton, mim da nota</p>
-    </footer>
+  <head>
+    <title>Atividade</title>
+    <meta charset="utf-8">
     <script src="script.js"></script>
-</body>
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+       
+      <div class="contagem"></div>
+      <h1>Contagem regressiva</h1>
+      <p>Digite um número para começar a contagem regressiva</p>
+      <input type="text" id="numeroRegressiva">
+      <button onclick="contarRegressiva()">Enviar</button>
+      <p id="resultadoRegressiva"></p>
+      <br>
+      
+      <div class="tabuada"></div>
+      <h1>Tabuada</h1>
+      <p>Digite um número de 1 a 10, para mostrar a tabuada</p>
+      <input type="text" id="numeroTabuada">
+      <button onclick="calcularTabuada()">Enviar</button>
+      <p id="resultadoTabuada"></p>
+      <br>
+      
+      <div class="advinhar"></div>
+      <h1>Jogo: Adivinhe o número</h1>
+      <p>Tente adivinhar o número secreto de 1 a 10</p>
+      <input type="text" id="numeroJogo">
+      <button onclick="adivinharNumero()">Enviar</button>
+      <button onclick="gerarNovoNumero()">Gerar um novo numero</button>
+      <p id="resultadoJogo"></p>
+      <br>
+    
+  </body>
 </html>
