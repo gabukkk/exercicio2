@@ -1,23 +1,39 @@
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #e9ecef;
-    color: #343a40;
+/* Estilo para o contêiner principal */
+.container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
 }
 
-header {
-    background: #007bff;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
+/* Estilo para os números */
+.numeros {
+  font-size: 18px;
+  color: #333;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #007bff;
-    color: #ffffff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+/* Estilo para o resultado */
+.resultado {
+  font-weight: bold;
+  font-size: 20px;
+  color: #ff5722;
+}
+
+/* Estilo para os botões */
+.botao {
+  background-color: #4CAF50; /* Verde */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.botao:hover {
+  background-color: #45a049;
 }
