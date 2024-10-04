@@ -1,13 +1,15 @@
-function iniciarContagemRegressiva() {
+//regressiva
+function contarRegressiva() {
   let numero = parseInt(document.getElementById("numeroRegressiva").value);
-  let resultado = [];
+  let resultado = "";
   for (let i = numero; i >= 0; i--) {
-    resultado.push(i);
+    resultado += i + " ";
   }
-  document.getElementById("resultadoRegressiva").innerHTML = resultado.join(" ");
+  document.getElementById("resultadoRegressiva").innerHTML = resultado;
 }
 
-function mostrarTabuada() {
+//tabuada
+function calcularTabuada() {
   let numero = parseInt(document.getElementById("numeroTabuada").value);
   let resultado = "";
   if (numero >= 1 && numero <= 10) {
@@ -15,34 +17,31 @@ function mostrarTabuada() {
       resultado += `${numero} x ${i} = ${numero * i}<br>`;
     }
   } else {
-    resultado = "Insira um número entre 1 e 10!";
+    resultado = "Digite um número de 1 a 10!";
   }
   document.getElementById("resultadoTabuada").innerHTML = resultado;
 }
 
-function gerarNumeroAleatorio() {
-  return Math.floor(Math.random() * 10) + 1;
-}
+//adivinhar
+let numeroSecreto = Math.floor(Math.random() * 10) + 1; 
 
-let numeroSecreto = gerarNumeroAleatorio();
-
-function adivinhar() {
+function adivinharNumero() {
   let tentativa = parseInt(document.getElementById("numeroJogo").value);
   let resultado = "";
   if (isNaN(tentativa)) {
-    resultado = "Por favor, insira um número válido!";
+    resultado = "Por favor, digite um número válido!";
   } else if (tentativa === numeroSecreto) {
     resultado = "Parabéns! Você acertou!";
   } else if (tentativa > numeroSecreto) {
     resultado = `Tente novamente! O número secreto é menor que ${tentativa}.`;
   } else {
     resultado = `Tente novamente! O número secreto é maior que ${tentativa}.`;
-  }
-  document.getElementById("resultadoJogo").innerHTML = resultado;
-}
+      }
+      document.getElementById("resultadoJogo").innerHTML = resultado;
+    }
 
 function gerarNovoNumero() {
-  numeroSecreto = gerarNumeroAleatorio();
-  document.getElementById("resultadoJogo").innerHTML = "Novo número gerado. Tente adivinhar.";
+  numeroSecreto = Math.floor(Math.random() * 10) + 1;
+  document.getElementById("resultadoJogo").innerHTML = "Novo número gerado. Tente adivinhar";
   document.getElementById("numeroJogo").value = ""; 
 }
