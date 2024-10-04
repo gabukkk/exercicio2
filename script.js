@@ -20,6 +20,10 @@ function mostrarTabuada() {
   document.getElementById("resultadoTabuada").innerHTML = resultado;
 }
 
+function gerarNumeroAleatorio() {
+  return Math.floor(Math.random() * 10) + 1;
+}
+
 let numeroSecreto = gerarNumeroAleatorio();
 
 function adivinhar() {
@@ -35,10 +39,6 @@ function adivinhar() {
     resultado = `Tente novamente! O número secreto é maior que ${tentativa}.`;
   }
   document.getElementById("resultadoJogo").innerHTML = resultado;
-}
-
-function gerarNumeroAleatorio() {
-  return Math.floor(Math.random() * 10) + 1;
 }
 
 function gerarNovoNumero() {
