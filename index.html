@@ -3,31 +3,36 @@
   <head>
     <title>Atividade</title>
     <meta charset="utf-8">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="estilo.css">
   </head>
   <body>
-      <div class="contagem"></div>
-      <h1>contagem regressiva</h1>
-      <p>fale um número pra a contagem regressiva</p>
+       
+      <div class="section"></div>
+      <h1>Contagem regressiva</h1>
+      <p>Digite um número para começar a contagem regressiva</p>
       <input type="text" id="numeroRegressiva">
       <button onclick="contarRegressiva()">Enviar</button>
       <p id="resultadoRegressiva"></p>
       <br>
-      <div class="tabuada"></div>
-      <h1>tabuada</h1>
-      <p>fale um número de 1 a 10</p>
+      
+      <div class="section"></div>
+      <h1>Tabuada</h1>
+      <p>Digite um número de 1 a 10, para mostrar a tabuada</p>
       <input type="text" id="numeroTabuada">
       <button onclick="calcularTabuada()">Enviar</button>
       <p id="resultadoTabuada"></p>
       <br>
-      <div class="advinhar"></div>
-      <h1>adivinhe o numero</h1>
-      <p>adivinhe o número de 1 a 10</p>
+      
+      <div class="section"></div>
+      <h1>Jogo: Adivinhe o número</h1>
+      <p>Tente adivinhar o número secreto de 1 a 10</p>
       <input type="text" id="numeroJogo">
-      <button onclick="adivinharNumero()">enviar</button>
-      <button onclick="gerarNovoNumero()">novo numero</button>
+      <button onclick="adivinharNumero()">Enviar</button>
+      <button onclick="gerarNovoNumero()">Gerar um novo numero</button>
       <p id="resultadoJogo"></p>
       <br>
-    <script src="script.js"></script>
+       
+      <div class="section"></div>
   </body>
 </html>
