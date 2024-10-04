@@ -1,4 +1,3 @@
-// Contagem regressiva
 function iniciarContagemRegressiva() {
   let numero = parseInt(document.getElementById("numeroRegressiva").value);
   let resultado = [];
@@ -8,7 +7,6 @@ function iniciarContagemRegressiva() {
   document.getElementById("resultadoRegressiva").innerHTML = resultado.join(" ");
 }
 
-// Tabuada
 function mostrarTabuada() {
   let numero = parseInt(document.getElementById("numeroTabuada").value);
   let resultado = "";
@@ -22,7 +20,6 @@ function mostrarTabuada() {
   document.getElementById("resultadoTabuada").innerHTML = resultado;
 }
 
-// Adivinhação
 let numeroSecreto = gerarNumeroAleatorio();
 
 function adivinhar() {
